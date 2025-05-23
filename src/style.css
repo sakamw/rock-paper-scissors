@@ -13,6 +13,6 @@ body {
 :root {
   --primary-bg: #9ec91e;
   --secondary-bg: #f2c244;
-  --light-white-bg: ##ffffff:
-  --primary-font-family: "Press Start 2p", system-ui;
+  --light-white-bg:
+    ##ffffff: --primary-font-family: "Press Start 2p", system-ui;
 }
