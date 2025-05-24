@@ -14,8 +14,8 @@
     />
   </head>
   <body>
-    <div id="container">
-      <div class="main-area">
+    <section id="container">
+      <div class="game-area">
         <div class="game-header">
           <p class="copyright">
             &copy; 2025
@@ -27,18 +27,17 @@
           </p>
           <p class="score" id="scoreboard">computer 0 0 player</p>
         </div>
-        <div class="player-box u-marg-top" id="computer-box">
+        <div class="player-box marg-top" id="computer-box">
           <p class="player-box--title">Computer</p>
           <p class="emoji" id="computer-choice-emoji">✌️</p>
         </div>
-        <p class="winner-announcement" id="winner-announcement">
-          currently draw
-        </p>
+        <p class="winner-announce" id="winner-announce">currently draw</p>
         <div class="player-box" id="player-box">
           <p class="player-box--title">Player</p>
           <p class="emoji" id="player-choice-emoji">✌️</p>
         </div>
       </div>
+
       <div class="scoreboard"></div>
       <div class="user-choices">
         <button class="choice-button" id="rock-btn">
@@ -54,7 +53,7 @@
           <p class="button-text">scissors</p>
         </button>
       </div>
-    </div>
+    </section>
 
     <script src="src/rockPaperScissors.js"></script>
   </body>
