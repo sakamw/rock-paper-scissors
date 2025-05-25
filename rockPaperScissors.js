@@ -10,6 +10,11 @@ const scoreboard = document.getElementById("scoreboard");
 let computerScore = 0;
 let playerScore = 0;
 
+// Event Listener
+rockBtn.addEventListener("click", () => playGame("rock"));
+paperBtn.addEventListener("click", () => playGame("paper"));
+scissorsBtn.addEventListener("click", () => playGame("scissors"));
+
 // Updating the scoreboard
 function updateScore(winner) {
   if (winner === "player") {
@@ -55,13 +60,3 @@ function playGame(playerChoice) {
     updateScore("computer");
   }
 }
-
-// Event Listener
-rockBtn.addEventListener("click", () => playGame("rock"));
-paperBtn.addEventListener("click", () => playGame("paper"));
-scissorsBtn.addEventListener("click", () => playGame("scissors"));
-
-// Personal research Disabling right-clicking
-// document.addEventListener("contextmenu", function (e) {
-//   e.preventDefault();
-// });
