@@ -4,11 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-bg: #9ec91e;
+  --secondary-bg: #f2c244;
+  --color-white: #ffffff;
+  --color-primary: black;
+}
+
 body {
   font-family: "Press Start 2P", system-ui;
   font-size: 1rem;
   min-height: 100vh;
-  color: #ecefca;
+  color: var(--color-primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +27,7 @@ body {
   min-height: 100vh;
   max-width: 80em;
   padding: 1.5rem;
-  background-color: #213448;
+  background-color: var(--primary-bg);
   border: none;
   box-shadow: none;
   text-align: center;
@@ -42,12 +49,12 @@ body {
 
 .copy-right {
   font-size: 1rem;
-  color: #ecefca;
+  color: var(--color-primary);
 }
 
 .score {
   font-size: 1.2rem;
-  color: #ecefca;
+  color: var(--color-primary);
   text-transform: lowercase;
 }
 
@@ -60,14 +67,14 @@ body {
 
 .player-box--title {
   font-size: 1rem;
-  color: #ecefca;
+  color: var(--color-primary);
   margin-bottom: 1rem;
 }
 
 .emoji {
   font-size: 5rem;
   padding: 0.5rem;
-  border: 2px dashed #ecefca;
+  border: 2px dashed var(--color-primary);
   border-radius: none;
   min-width: 6rem;
   min-height: 6rem;
@@ -77,11 +84,11 @@ body {
 }
 
 .winner-announce {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   border: none;
-  background-color: #547792;
-  color: #ecefca;
-  padding: 1rem;
+  background-color: var(--secondary-bg);
+  color: var(--color-primary);
+  padding: 1.8rem;
   margin-right: -1.5rem;
   margin-left: -1.5rem;
   font-weight: bold;
@@ -104,7 +111,7 @@ body {
   font-family: "Press Start 2P", system-ui;
   font-size: 1rem;
   text-transform: capitalize;
-  color: #000;
+  color: var(--color-primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,6 +125,17 @@ body {
 
 /* Responsive at 600px(37.5em) */
 @media screen and (max-width: 37.5em) {
+  .game-area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
   .choice-button {
     min-width: 5rem;
     font-size: 0.6rem;
