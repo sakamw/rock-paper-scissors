@@ -115,6 +115,7 @@ body {
   font-size: 2rem;
 }
 
+/* Responsive at 600px(37.5em) */
 @media screen and (max-width: 37.5em) {
   .choice-button {
     min-width: 5rem;
