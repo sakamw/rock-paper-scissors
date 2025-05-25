@@ -2,21 +2,133 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: black;
 }
 
 body {
   font-family: "Press Start 2P", system-ui;
-  font-size: 1.6rem;
+  font-size: 1rem;
+  min-height: 100vh;
+  color: #ecefca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-:root {
-  --primary-bg: #9ec91e;
-  --secondary-bg: #f2c244;
-  --light-white-bg: ##ffffff;
-  --primary-font-family: "Press Start 2p", system-ui;
+#container {
+  width: 100%;
+  height: 100vh;
+  max-width: 37.5em;
+  padding: 1.5rem;
+  background-color: #213448;
+  border: none;
+  box-shadow: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-a {
-  color: #614669;
+.game-header {
+  font-family: "press-start-2p", system-ui;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: flex-start;
+  margin-bottom: 16.5rem;
+  width: 100%;
+}
+
+.copy-right {
+  font-size: 1rem;
+  color: #ecefca;
+}
+
+.score {
+  font-size: 1.2rem;
+  color: #ecefca;
+  text-transform: lowercase;
+}
+
+.player-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.player-box--title {
+  font-size: 1rem;
+  color: #ecefca;
+  margin-bottom: 1rem;
+}
+
+.emoji {
+  font-size: 5rem;
+  padding: 0.5rem;
+  border: 2px dashed #ecefca;
+  border-radius: none;
+  min-width: 6rem;
+  min-height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winner-announce {
+  font-size: 1.2rem;
+  border: none;
+  background-color: #547792;
+  color: #ecefca;
+  padding: 1rem;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.user-choices {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.choice-button {
+  background: white;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 6rem;
+}
+
+.button-emoji {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .choice-button {
+    min-width: 5rem;
+    font-size: 0.6rem;
+    padding: 0.8rem;
+  }
+
+  .button-emoji {
+    font-size: 1.5rem;
+  }
+
+  .emoji {
+    font-size: 3rem;
+    min-width: 5rem;
+    min-height: 5rem;
+  }
 }
